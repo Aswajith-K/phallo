@@ -148,7 +148,7 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## ✍️ Author
 
-*   **Aswajith K** - *Full Stack Developer* - [Your GitHub Profile](https://github.com/Aswajith-K)
+*   **Aswajith K** - *Full Stack Developer* - [GitHub Profile](https://github.com/Aswajith-K)
 
 ---
 
