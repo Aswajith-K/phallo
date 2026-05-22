@@ -28,7 +28,7 @@ To contribute code changes (bug fixes, refinements, or new features), please fol
 ### 1. Fork and Clone
 Fork the repository on GitHub, then clone your fork locally:
 ```bash
-git clone https://github.com/your-username/phallo.git
+git clone https://github.com/Aswajith-K/phallo.git
 cd phallo
 ```
 
