@@ -71,7 +71,7 @@ Ensure you have **Python 3.8+** and **Git** installed on your system.
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/your-username/phallo.git
+git clone https://github.com/Aswajith-K/phallo.git
 cd phallo
 ```
 
@@ -120,24 +120,6 @@ Follow the prompts to configure your username, email, and password.
 python manage.py runserver
 ```
 Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your web browser to view the live storefront! Access the Admin dashboard at [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) to begin adding categories, products, and banners.
-
----
-
-## 📸 Screenshots
-
-To showcase your project visually, replace these placeholders with screenshots of your running application:
-
-### Homepage & Banner Slider
-*Place your homepage screenshot here*
-`![Homepage Slider](docs/screenshots/homepage.png)`
-
-### Collections & Categories Page
-*Place your collections/products page screenshot here*
-`![Collections Page](docs/screenshots/collections.png)`
-
-### Django Admin Portal
-*Place your Django admin interface screenshot showing product uploads here*
-`![Admin Dashboard](docs/screenshots/admin.png)`
 
 ---
 
