@@ -1,0 +1,49 @@
+{% load static %}
+
+<footer class="footer-centered" role="contentinfo">
+    <div class="footer-centered__container">
+
+        <!-- Logo -->
+        <a href="#" class="footer-centered__logo" aria-label="Homepage">
+            <img src="{% static 'store/images/footer_logo.svg' %}">
+        </a>
+
+        <!-- Navigation -->
+        <nav class="footer-centered__nav" aria-label="Main Footer Navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Social Media Icons -->
+        <nav class="footer-centered__social" aria-label="Social Media Links">
+            <ul>
+                <li>
+                    <a href="#" aria-label="Our GitHub Profile">
+                        <i class="footer-icon bi bi-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Our X Profile">
+                        <i class="footer-icon bi bi-twitter-x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Our Instagram Profile">
+                        <i class="footer-icon bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Copyright -->
+        <p class="footer-centered__copyright">
+            &copy; 2026 Phallo. All Rights Reserved.
+        </p>
+
+    </div>
+</footer>

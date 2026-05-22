@@ -1,0 +1,71 @@
+<div class="slider-section">
+
+    <!-- Title -->
+    <div class="block-title" style="margin-bottom: 50px;">
+        <h2 class="title-heading">
+            {{ title }}
+        </h2>
+        <hr>
+    </div>
+
+    <div class="products-wrapper">
+
+        <!-- Left Button -->
+        <button class="scroll-btn left-btn"
+            onclick="scrollProducts('{{ slider_id }}', -380)">
+
+            <i class="bi bi-chevron-left"></i>
+
+        </button>
+
+        <!-- Cards -->
+        <div class="products-container"
+            id="{{ slider_id }}">
+
+            {% for product in products %}
+
+            <div class="product-card">
+
+                <div class="card border-0">
+
+                    <img src="{{ product.image.url }}"
+                        class="card-img-top product-img">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            {{ product.name }}
+                        </h5>
+
+                        <h6 class="card-cash">
+                            ${{ product.price|floatformat:2 }}
+                        </h6>
+
+                        <a href="#"
+                            class="btn btn-dark w-100 mt-2">
+
+                            Add to Cart
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        <!-- Right Button -->
+        <button class="scroll-btn right-btn"
+            onclick="scrollProducts('{{ slider_id }}', 380)">
+
+            <i class="bi bi-chevron-right"></i>
+
+        </button>
+
+    </div>
+
+</div>

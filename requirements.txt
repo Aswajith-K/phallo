@@ -1,0 +1,12 @@
+# Core Web Framework
+Django>=3.2.25,<6.1.0
+
+# Image & Media Upload Support (Django ImageField)
+Pillow>=10.0.0
+
+# Environment Configuration
+python-dotenv>=1.0.0
+
+# Django Internal Dependencies
+asgiref>=3.8.0
+sqlparse>=0.5.0

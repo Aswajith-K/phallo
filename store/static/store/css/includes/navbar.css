@@ -1,0 +1,64 @@
+/* Navbar */
+
+.topnav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Nav Links */
+
+.nav-links {
+    display: flex;
+    /* gap: 40px; */
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Underline */
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+/* Hover Animation */
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.topnav img {
+    height: 45px;
+    justify-items: center;
+}
+
+.nav-icons i {
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-icons i:hover {
+    color: gray;
+}

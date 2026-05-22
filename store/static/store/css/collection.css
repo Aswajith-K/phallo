@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* Collections Page */
+
+.page-top-navi {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.page-navi {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.page-navi a {
+    color: black;
+    text-decoration: none;
+}
+
+.collection-header {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.collection-header h1 {
+    font-size: 45px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+/* Filter */
+
+.filter-div {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.filter-line {
+    width: 0.5px;
+    height: 14px;
+    background-color: gray;
+}
+
+.filter-btn {
+    border: none;
+    background: transparent;
+    display: flex;
+    padding: 0px 20px;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filter-btn p {
+    margin: 0px;
+}
+
+.filter-div i {
+    filter: drop-shadow(0 0 0.5px black);
+}
+
+
+/* Floating Menu */
+
+.floating-menu {
+
+    position: absolute;
+
+    top: 45px;
+    right: 0;
+
+    width: 230px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+
+    padding: 18px;
+
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition: all 0.25s ease;
+
+    z-index: 999;
+}
+
+/* Open State */
+
+.floating-menu.show {
+
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+/* Labels */
+
+.floating-menu label {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.floating-menu input[type="checkbox"] {
+    accent-color: black;
+}
+
+
+/* No Products Message */
+
+.no-products-message {
+
+    display: none;
+
+    text-align: center;
+
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    color: black;
+}
+
+.no-products-message img {
+    height: 100px;
+    width: auto;
+}
+
+
+/* Grid */
+
+.collection-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px, 1fr));
+
+    column-gap: 30px;
+    row-gap: 50px;
+
+    margin: 40px 50px;
+
+}
+
+.product-card {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 0px;
+}
+
+.product-img {
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.card-body {
+    padding: 10px 0px 0px 0px;
+}
+
+.card-title {
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-cash {
+    font-size: 18px;
+    font-weight: bold;
+}
